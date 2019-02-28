@@ -160,8 +160,8 @@ def menu_choice():
     :return: an int, the chosen menu option
     """
     choice = get_int_input("Enter your choice: ")
-    while (choice < 0) or (choice > 6):
-        print("Enter a number between 0 and 6")
+    while (choice < 1) or (choice > 6):
+        print("Enter a number between 1 and 6")
         choice = get_int_input("Enter your choice: ")
 
     return choice
